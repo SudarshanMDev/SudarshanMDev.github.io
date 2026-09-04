@@ -1,27 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
+    <!-- ── Primary SEO ─────────────────────────────────────────── -->
+    <title>Sudarshan More | Java & Spring Boot Developer</title>
+    <meta
+      name="description"
+      content="Freelance Java & Spring Boot developer building reliable backend systems, REST APIs, microservices, and AI-powered business applications for startups and companies worldwide."
+    />
+    <meta
+      name="keywords"
+      content="Java Developer, Spring Boot Developer, Java Backend Developer, Spring Boot Freelancer, Java Freelancer, Backend Developer, Microservices Developer, REST API Developer"
+    />
+    <meta name="author" content="Sudarshan More" />
+    <meta name="theme-color" content="#10b981" />
 
-    <!-- Makes the website responsive on mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ── Open Graph / social sharing ─────────────────────────── -->
+    <!-- TODO: replace the URLs below with your live site + a real 1200x630 preview image. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sudarshan More | Java & Spring Boot Developer" />
+    <meta
+      property="og:description"
+      content="I build reliable backend systems, REST APIs, microservices, and AI-powered business applications with Java and Spring Boot."
+    />
+    <meta property="og:url" content="https://sudarshanmdev.github.io/" />
+    <meta property="og:image" content="https://sudarshanmdev.github.io/og-image.png" />
+    <meta property="og:site_name" content="Sudarshan More" />
 
-    <title>Sudarshan More | Java Developer</title>
-</head>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sudarshan More | Java & Spring Boot Developer" />
+    <meta
+      name="twitter:description"
+      content="I build reliable backend systems, REST APIs, microservices, and AI-powered business applications with Java and Spring Boot."
+    />
+    <meta name="twitter:image" content="https://sudarshanmdev.github.io/og-image.png" />
 
-<body>
+    <link rel="canonical" href="https://sudarshanmdev.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <h1>Hello, I'm Sudarshan More</h1>
+    <!-- ── Fonts (free, from Google Fonts) ─────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <p>
-        Java & Spring Boot Developer
-    </p>
+    <!-- ── Structured data (helps search engines understand who you are) ── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sudarshan More",
+        "jobTitle": "Java & Spring Boot Developer",
+        "url": "https://sudarshanmdev.github.io/",
+        "sameAs": ["https://github.com/SudarshanMDev"],
+        "knowsAbout": [
+          "Java",
+          "Spring Boot",
+          "REST APIs",
+          "Microservices",
+          "Spring Security",
+          "JPA/Hibernate",
+          "PostgreSQL",
+          "Kafka",
+          "Docker",
+          "AI/LLM Integration"
+        ]
+      }
+    </script>
 
-    <p>
-        My portfolio is under construction.
-    </p>
-
-</body>
-
+    <!-- Set the theme class before paint to avoid a flash of the wrong theme. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark')
+          }
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
